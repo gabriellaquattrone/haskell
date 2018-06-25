@@ -33,7 +33,7 @@ type Coordinate = (Int, Int) -- the coordinates for each piece on the board
 type Move = (Coordinate, Char) -- the coordinates for specific pieces
 
 -- OUR TESTER
--- Not part of the assignment, but a tester to check work.
+-- A tester to check work.
 start = "-wWw--www-------bbb--bBb-"
 playgame :: Board -> Char ->  Int -> Boards
 playgame start turn depth = playgamehelper start [] (opposite turn) depth
